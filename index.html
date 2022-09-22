@@ -19,12 +19,15 @@
 
     <style>
         .picture {
-            position: relative;
+            position: absolute;
             width: 80vh;
             height: 45vh;
-            margin: 50px auto;
+            top: calc(50% - 45vh/2);
+            left: calc(50% - 80vh/2);
+            /* margin: 50px auto; */
             background-color: aqua;
             overflow: hidden;
+            z-index: -2;
         }
 
         img {
@@ -71,7 +74,43 @@
             display: block;
             width: 100%;
             left: 0;
-            bottom: -55%;
+            bottom: -72%;
+        }
+
+        img:nth-child(7) {
+            display: block;
+            width: 10%;
+            left: 5%;
+            top: 5%;
+            z-index: -1;
+        }
+
+        img:nth-child(8) {
+            display: block;
+            width: 30%;
+            left: -5%;
+            top: 10%;
+        }
+
+        img:nth-child(9) {
+            display: block;
+            width: 40%;
+            right: 2%;
+            top: 8%;
+        }
+
+        img:nth-child(10) {
+            display: block;
+            width: 35%;
+            right: 0%;
+            top: 18%;
+        }
+
+        img:nth-child(11) {
+            display: block;
+            width: 8%;
+            left: 8%;
+            bottom: 8%;
         }
 
     </style>
